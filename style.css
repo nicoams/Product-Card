@@ -43,19 +43,19 @@ body {
   width: 100%;
   height: auto;
 }
-.img-wrapper .btn-close,
-.img-wrapper .img-animated {
+.img-wrapper .btn-360,
+.img-wrapper .img-static {
   display: none;
 }
 
 html.animated .btn-360,
 html.animated .img-static {
-  display: none;
+  display: initial;
 }
 
 html.animated .btn-close,
 html.animated .img-animated {
-  display: initial;
+  display: none;
 }
 
 .info .info-text * {
