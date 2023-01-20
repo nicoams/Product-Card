@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1E1E;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card-wrapper {
+  background-color: #D9CDF7;
+  width: 875px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 450px;
+  height: 253px;
+}
+.img-wrapper .btn-360,
+.img-wrapper .btn-close {
+  position: absolute;
+  left: 81.51%;
+  right: 11.14%;
+  top: 3.8%;
+  bottom: 86.12%;
+  background: #D9CDF7;
+  border: none;
+  width: 33px;
+  cursor: pointer;
+}
+.img-wrapper .img-static,
+.img-wrapper .img-animated {
+  width: 100%;
+  height: auto;
+}
+.img-wrapper .btn-close,
+.img-wrapper .img-animated {
+  display: none;
+}
+
+html.animated .btn-360,
+html.animated .img-static {
+  display: none;
+}
+
+html.animated .btn-close,
+html.animated .img-animated {
+  display: initial;
+}
+
+.info .info-text * {
+  margin-top: 12px;
+}
+.info .code {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #271A45;
+}
+.info h1 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #271A45;
+}
+.info .price {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #271A45;
+  opacity: 0.67;
+}
+.info .btn-adcCesta {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  background: #D9CDF7;
+  border: 0.5px solid #271A45;
+  border-radius: 999px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 725px) {
+  .card-wrapper {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .img-wrapper {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
